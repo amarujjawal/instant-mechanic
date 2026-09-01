@@ -1,0 +1,2 @@
+import React,{useEffect,useState} from 'react'; import {createRoot} from 'react-dom/client'; import {BrowserRouter,useNavigate} from 'react-router-dom'; import App from './App'; import './styles.css';
+function Root(){const [ready,setReady]=useState(false); const nav=useNavigate(); useEffect(()=>{if(!localStorage.getItem('im_token'))nav('/login',{replace:true}); setReady(true)},[]); return ready?<App/>:null} createRoot(document.getElementById('root')).render(<BrowserRouter><Root/></BrowserRouter>);
