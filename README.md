@@ -121,3 +121,7 @@ AI tools can be used under the assignment rules. For the submission, document th
 - Use MongoDB Atlas with a dedicated database user and least-privilege access.
 - Put the API behind HTTPS and a reverse proxy.
 - For a larger workload, add Redis-backed rate limiting/caching and structured logging.
+
+
+## live link
+frontend-ten-kappa-92.vercel.app
